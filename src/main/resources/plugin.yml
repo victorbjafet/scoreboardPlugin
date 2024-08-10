@@ -1,0 +1,17 @@
+  name: ScoreboardPlugin
+  main: io.github.vbjfr.SBPlugin
+  version: 1.0.0
+  author: Macker
+  description: Allows anyone to change the sidebar scoreboard without having to allow permission to /scoreboard
+
+  commands:
+    sb:
+      description: Change the displayed scoreboard for everyone
+      usage: /sb <Scoreboard Name>
+      permission: SBPlugin.sb
+      permission-message: You do not have permission to use this command.
+
+  permissions:
+    SBPlugin.sb:
+      description: Allows a player to use /sb
+      default: true
